@@ -18,5 +18,5 @@
 
 - **Zero Sign-Up & Zero Database**: Display name, preferred 3D avatar, sound settings, and game history are stored locally in the user's browser (`localStorage`).
 - **Instant Room Sharing & Offline QR Codes**: Every game generates a unique shareable URL and a 100% client-side scannable QR code so mobile teammates can join instantly.
-- **Realtime Peer-to-Peer Sync**: Live room synchronization via WebSockets (MQTT-over-WSS with Last Will & Testament disconnect detection) and `BroadcastChannel`.
+- **Realtime Peer-to-Peer Sync (2-Hour Auto-Expiry)**: Live room synchronization via OASIS MQTT 5.0 over TLS WebSockets (with Last Will & Testament disconnect clearing and automatic 2-hour broker message expiry) plus local `BroadcastChannel`. After 2 hours of inactivity, room data expires from the relay and only participants retain private local history.
 - **Production Safeguards**: Automatic host failover if a host disconnects, one-click host takeover banner, browser close/refresh warnings during active games, and mobile Safari compatibility.
