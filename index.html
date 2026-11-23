@@ -3,48 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Estimateys — Browser-Native Team Tools (Planning Poker, Fruit Race 3D &amp; Sydney Trains 3D)</title>
+    <title>Estimateys — Browser-Native Team Games (Planning Poker, Fruit Race 3D &amp; Sydney Trains 3D)</title>
     <meta
       name="description"
-      content="Zero-database, 100% browser-based team tools: realtime Planning Poker, Fruit Race 3D, Sydney Express 3D station-to-station icebreaker, and Track Switcher 3D random picker."
+      content="Zero-database, 100% browser-based team games: realtime Planning Poker, Fruit Race 3D, Sydney Express 3D station-to-station icebreaker, and Track Switcher 3D random picker."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <link rel="canonical" href="https://estimateys.com/" />
     <link
       rel="icon"
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%F0%9F%99%8C%3C/text%3E%3C/svg%3E"
     />
+
+    <!-- Open Graph / Social Sharing Preview (Slack, Teams, Discord, LinkedIn, WhatsApp, iMessage, Facebook) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Estimateys" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:url" content="https://estimateys.com/" />
-    <meta property="og:title" content="Estimateys — Browser-Native Team Tools" />
+    <meta property="og:title" content="Estimateys — Browser-Native Team Games" />
     <meta
       property="og:description"
-      content="Realtime Planning Poker, Fruit Race 3D, Sydney Express 3D Icebreaker, and Track Switcher 3D — zero sign-ups, zero database, straight from your browser."
+      content="Realtime Planning Poker, Fruit Race 3D, Sydney Express 3D Icebreaker, and Track Switcher 3D — zero sign-ups, zero database, straight from a shared link or QR code."
     />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Estimateys — Browser-Native Team Tools" />
+    <meta property="og:image" content="https://estimateys.com/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://estimateys.com/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Estimateys — Browser-native team games featuring Planning Poker, Fruit Race 3D, Sydney Express 3D, and Track Switcher 3D"
+    />
+
+    <!-- Twitter / X Large Card Preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Estimateys — Browser-Native Team Games" />
     <meta
       name="twitter:description"
       content="Realtime Planning Poker, Fruit Race 3D, Sydney Express 3D Icebreaker, and Track Switcher 3D — zero sign-ups, zero database."
     />
+    <meta name="twitter:image" content="https://estimateys.com/og-image.jpg" />
+    <meta
+      name="twitter:image:alt"
+      content="Estimateys — Browser-native team games featuring Planning Poker, Fruit Race 3D, Sydney Express 3D, and Track Switcher 3D"
+    />
+
+    <!-- Structured Data for Google & AI Search Engines -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Estimateys",
-        "url": "https://estimateys.com/",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web Browser",
-        "description": "Zero-database, browser-native team tools including Planning Poker, Fruit Race 3D, Sydney Express 3D Icebreaker, and Track Switcher 3D.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "Estimateys",
+            "url": "https://estimateys.com/",
+            "image": "https://estimateys.com/og-image.jpg",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web Browser",
+            "isAccessibleForFree": true,
+            "description": "Zero-database, 100% browser-based realtime team games and agile rituals: Planning Poker, Fruit Race 3D, Sydney Express 3D station-to-station icebreaker, and Track Switcher 3D random decision picker.",
+            "featureList": [
+              "Realtime Planning Poker with Basic Fibonacci and T-Shirt Sizes decks",
+              "Fruit Race 3D fair random tie-breaker with 14 animated fruit and veggie racers",
+              "Sydney Express 3D station-to-station team icebreaker on a 3D Sydney Waratah double-decker train",
+              "Track Switcher 3D random decision picker across up to 8 branching Sydney T-line tracks",
+              "Scannable offline QR codes and shareable room links",
+              "Zero sign-up, zero database, local browser history, and automatic host failover"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Does Estimateys require an account or database?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Estimateys is 100% browser-native with zero sign-ups and zero databases. Your display name, avatar, and recent game history stay locally in your own browser storage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What games are included in Estimateys?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Estimateys includes four realtime multiplayer browser games: Planning Poker (Fibonacci and T-Shirt estimation), Fruit Race 3D (14 animated fruit and veggie racers), Sydney Express 3D (station-to-station team icebreaker), and Track Switcher 3D (Sydney T-line random picker)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do teammates join a live Estimateys room?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Every game generates a unique shareable URL and a built-in scannable QR code so teammates on desktop or mobile phones can join instantly in their browser."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
+
     <meta name="theme-color" content="#0f1413" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -4347,6 +4412,53 @@ Dream holiday destination?`,value:m,onChange:e=>h(e.target.value)}),(0,T.jsxs)(`
         </pattern>
       </defs>
     </svg>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static semantic fallback read by non-JS search & AI crawlers; replaced immediately when React mounts -->
+      <main style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
+        <h1>Estimateys — Browser-native team games for fast-moving teams</h1>
+        <p>
+          Realtime planning poker, 3D tie-breakers, and Sydney train icebreakers. No sign-ups, no
+          database — share a link or scannable QR code and play together live in your browser.
+        </p>
+        <section>
+          <h2>Planning Poker</h2>
+          <p>
+            Estimate agile backlog stories on a live tabletop with Basic Fibonacci or T-Shirt cards,
+            clickable Jira, Linear, or GitHub round links, sealed votes, and synchronized 3-2-1 card reveals.
+          </p>
+          <a href="#/poker">Open Planning Poker</a>
+        </section>
+        <section>
+          <h2>Fruit Race 3D</h2>
+          <p>
+            Break ties or choose the next presenter with a fair 3D sprint featuring 14 animated fruit
+            and veggie racers, custom race timers, bulk bot rosters, live cheering, and a 1st/2nd/3rd podium.
+          </p>
+          <a href="#/race">Open Fruit Race 3D</a>
+        </section>
+        <section>
+          <h2>Sydney Express 3D</h2>
+          <p>
+            Station-to-station team icebreaker aboard a 3D Sydney Waratah double-decker train rolling
+            from Central past Circular Quay, the Harbour Bridge, and Opera House to North Sydney, with
+            4 curated decks, custom questions, private replies, live reactions, and Markdown export.
+          </p>
+          <a href="#/train">Open Sydney Express 3D</a>
+        </section>
+        <section>
+          <h2>Track Switcher 3D</h2>
+          <p>
+            Place teammates, lunch spots, or sprint demo order onto up to 8 colour-coded branching
+            Sydney T-line tracks and watch the 3D train switch tracks live to pick a fair random winner.
+          </p>
+          <a href="#/switch">Open Track Switcher 3D</a>
+        </section>
+        <nav>
+          <a href="/llms.txt">Estimateys AI &amp; LLMs Guide</a>
+          <a href="#/privacy">Privacy Policy</a>
+          <a href="#/terms">Terms of Use</a>
+        </nav>
+      </main>
+    </div>
   </body>
 </html>

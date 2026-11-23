@@ -1,0 +1,22 @@
+# Estimateys
+
+> 100% browser-native, zero-database realtime team games and agile rituals. No sign-ups, no accounts, no backend servers — share a link or scannable QR code and play live together on desktop or mobile.
+
+- Website: https://estimateys.com/
+- Support: https://ko-fi.com/reggiepangilinan
+- Privacy Policy: https://estimateys.com/#/privacy
+- Terms of Use: https://estimateys.com/#/terms
+
+## Games
+
+- [Planning Poker](https://estimateys.com/#/poker): Realtime agile story-point estimation tabletop with Basic Fibonacci (`0, 1, 2, 3, 5, 8, 13, 21, ?, ☕`) and T-Shirt Sizes (`XS, S, M, L, XL, XXL, ?, ☕`) decks, shared round descriptions & clickable issue links (Jira, Linear, GitHub), sealed votes with synchronized 3-2-1 card reveals, consensus & average summaries, and local round history.
+- [Fruit Race 3D](https://estimateys.com/#/race): Fair, deterministic 3D sprint tie-breaker featuring 14 sculpted animated fruit and veggie racers (cosmetic only — 100% equal random odds), custom race timer, bulk line-delimited bot roster support, live cheering, mid-race spectator mode, 3D victory podium (1st/2nd/3rd), and local cup history.
+- [Sydney Express 3D](https://estimateys.com/#/train): Station-to-station team icebreaker aboard a 3D Sydney Waratah double-decker train travelling across 6 iconic Sydney Harbour stations (Central, Town Hall, Wynyard, Circular Quay with Harbour Bridge & Opera House sails, Milsons Point, North Sydney). Includes 4 curated prompt decks plus custom line-delimited prompts, private answers until conductor reveal, live emoji reactions, Markdown export, and local journey history.
+- [Track Switcher 3D](https://estimateys.com/#/switch): Fair random decision picker & roulette using a 3D Sydney Waratah train navigating glowing signal gantries across up to 8 colour-coded Sydney T-line branching tracks (`T1, T2, T3, T4, T8, M1, T9, L2`). Supports custom options, loading connected teammates as platforms, optional winner elimination mode for picking demo order, and local pick history.
+
+## Key Capabilities & Architecture
+
+- **Zero Sign-Up & Zero Database**: Display name, preferred 3D avatar, sound settings, and game history are stored locally in the user's browser (`localStorage`).
+- **Instant Room Sharing & Offline QR Codes**: Every game generates a unique shareable URL and a 100% client-side scannable QR code so mobile teammates can join instantly.
+- **Realtime Peer-to-Peer Sync**: Live room synchronization via WebSockets (MQTT-over-WSS with Last Will & Testament disconnect detection) and `BroadcastChannel`.
+- **Production Safeguards**: Automatic host failover if a host disconnects, one-click host takeover banner, browser close/refresh warnings during active games, and mobile Safari compatibility.

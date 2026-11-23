@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# AI & Search Discovery
 Sitemap: https://estimateys.com/sitemap.xml
+# LLMs guide: https://estimateys.com/llms.txt
